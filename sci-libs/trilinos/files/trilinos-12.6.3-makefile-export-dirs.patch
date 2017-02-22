@@ -1,0 +1,15 @@
+Index: trilinos-12.6.3-Source/cmake/tribits/core/package_arch/TribitsWriteClientExportFiles.cmake
+===================================================================
+--- trilinos-12.6.3-Source.orig/cmake/tribits/core/package_arch/TribitsWriteClientExportFiles.cmake
++++ trilinos-12.6.3-Source/cmake/tribits/core/package_arch/TribitsWriteClientExportFiles.cmake
+@@ -559,8 +559,8 @@ INCLUDE(\"\${CMAKE_CURRENT_LIST_DIR}/${P
+     # and includes using the config file path above. The underlying
+     # assumption here is that a generator that uses
+     # CMAKE_INSTALL_PREFIX is being used.
+-    SET(FULL_LIBRARY_DIRS_SET ${CMAKE_INSTALL_PREFIX}/${${PROJECT_NAME}_INSTALL_LIB_DIR})
+-    SET(FULL_INCLUDE_DIRS_SET ${CMAKE_INSTALL_PREFIX}/${${PROJECT_NAME}_INSTALL_INCLUDE_DIR})
++    SET(FULL_LIBRARY_DIRS_SET ${${PROJECT_NAME}_INSTALL_LIB_DIR})
++    SET(FULL_INCLUDE_DIRS_SET ${${PROJECT_NAME}_INSTALL_INCLUDE_DIR})
+ 
+     TRIBITS_LIST_TO_STRING("${FULL_LIBRARY_DIRS_SET}" ${CMAKE_LIBRARY_PATH_FLAG} MAKEFILE_LIBRARY_DIRS)
+     TRIBITS_LIST_TO_STRING("${FULL_INCLUDE_DIRS_SET}" "-I" MAKEFILE_INCLUDE_DIRS)

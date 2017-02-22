@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+	<email>xyce@sandia.gov</email>
+	<description>Xyce team</description>
+</maintainer>
+<longdescription>Xyce parallel circuit simulator</longdescription>
+<use>
+	<flag name="mkl">Uses <pkg>sci-libs/mkl</pkg> for fftw.</flag>
+	<flag name="shared">Build Xyce as shared library, capable of dynamic plug-in loading (not compatible with mpi)</flag>
+	<flag name="adms">Build Xyce capable of building additional models via <pkg>sci-electronics/adms</pkg></flag>
+</use>
+</pkgmetadata>

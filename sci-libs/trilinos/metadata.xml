@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>tamiko@gentoo.org</email>
+		<name>Matthias Maier</name>
+	</maintainer>
+	<maintainer type="person">
+		<email>andyspiros@gmail.com</email>
+	</maintainer>
+	<maintainer type="project">
+		<email>sci@gentoo.org</email>
+		<name>Gentoo Science Project</name>
+	</maintainer>
+	<longdescription lang="en">
+	The Trilinos Project is an effort to develop algorithms and enabling
+	technologies within an object-oriented software framework for the solution
+	of large-scale, complex multi-physics engineering and scientific problems.
+</longdescription>
+<slots>
+	<slot name="trilinos_xyce_0">Trilinos build tailored for sci-electronics/xyce</slot>
+</slots>
+<use>
+	<flag name="shared">Build Trilinos as shared (not static)</flag>
+	<flag name="pic">Complie Trilinos as position-independent</flag>
+</use>
+</pkgmetadata>
