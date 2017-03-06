@@ -1,6 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -12,7 +11,7 @@ DESCRIPTION="Scientific library collection for large scale problems"
 HOMEPAGE="http://trilinos.sandia.gov/"
 SRC_URI="https://trilinos.org/oldsite/download/files/trilinos-${PV}-Source.tar.bz2"
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~x86 ~amd64-linux"
 
 LICENSE="BSD LGPL-2.1"
 SLOT_DIR="trilinos_xyce_0"

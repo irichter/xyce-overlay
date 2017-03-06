@@ -1,6 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -13,7 +12,7 @@ doc? ( https://xyce.sandia.gov/downloads/_assets/documents/Xyce_Docs-${PV}.tar.g
 
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~x86 ~amd64 ~amd64-linux"
 RESTRICT="mirror fetch"
 
 IUSE="mpi doc mkl shared adms"
@@ -86,6 +85,7 @@ src_configure() {
 		$(use_enable mpi)
 		$(use_enable shared)
 		$(use_enable adms xyce-shareable)
+		"ARCHDIR=${EPREFIX}/usr"
 	)
 	if use mpi; then
 		myeconfargs+=(
